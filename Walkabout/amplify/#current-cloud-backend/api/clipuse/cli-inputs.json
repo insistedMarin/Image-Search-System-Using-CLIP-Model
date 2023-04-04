@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "paths": {
+    "/image": {
+      "name": "/image",
+      "lambdaFunction": "clipimage",
+      "permissions": {
+        "setting": "protected",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ],
+        "guest": [
+          "create",
+          "read"
+        ]
+      }
+    },
+    "/text": {
+      "name": "/text",
+      "lambdaFunction": "cliptext",
+      "permissions": {
+        "setting": "protected",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ],
+        "guest": [
+          "create",
+          "read"
+        ]
+      }
+    }
+  }
+}

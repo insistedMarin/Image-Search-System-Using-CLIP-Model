@@ -1,0 +1,147 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify0fd09b1eefa74-staging-145702-authRole",
+      "UnauthRoleArn": "arn:aws:iam::741373867248:role/amplify-amplify0fd09b1eefa74-staging-145702-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::741373867248:role/amplify-amplify0fd09b1eefa74-staging-145702-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-amplify0fd09b1eefa74-staging-145702-deployment",
+      "UnauthRoleName": "amplify-amplify0fd09b1eefa74-staging-145702-unauthRole",
+      "StackName": "amplify-amplify0fd09b1eefa74-staging-145702",
+      "StackId": "arn:aws:cloudformation:eu-west-3:741373867248:stack/amplify-amplify0fd09b1eefa74-staging-145702/a09a4e90-d166-11ed-98f5-0a23125368b4",
+      "AmplifyAppId": "d10zyp7nsq1igi",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplify0fd09b1eefa74-staging-145702-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    }
+  },
+  "function": {
+    "clipimage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [],
+      "lastBuildTimeStamp": "2023-04-04T16:18:14.321Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-04-04T16:18:16.746Z",
+      "distZipFilename": "clipimage-344b776635475a774b4c-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-amplify0fd09b1eefa74-staging-145702-deployment",
+        "s3Key": "amplify-builds/clipimage-344b776635475a774b4c-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify0fd09b1eefa74-staging-145702-deployment/amplify-cfn-templates/function/clipimage-cloudformation-template.json",
+        "logicalId": "functionclipimage"
+      },
+      "lastPushTimeStamp": "2023-04-04T17:05:59.234Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::741373867248:role/walkaboutLambdaRole082195ea-staging",
+        "Region": "eu-west-3",
+        "Arn": "arn:aws:lambda:eu-west-3:741373867248:function:clipimage-staging",
+        "Name": "clipimage-staging",
+        "LambdaExecutionRole": "walkaboutLambdaRole082195ea-staging"
+      },
+      "lastPushDirHash": "/0UX48tHQI0AcuDUqi7qjSZ+Oj4="
+    },
+    "cliptext": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-04-04T17:03:55.608Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-04-04T17:03:58.144Z",
+      "distZipFilename": "cliptext-48444661463732734130-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-amplify0fd09b1eefa74-staging-145702-deployment",
+        "s3Key": "amplify-builds/cliptext-48444661463732734130-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify0fd09b1eefa74-staging-145702-deployment/amplify-cfn-templates/function/cliptext-cloudformation-template.json",
+        "logicalId": "functioncliptext"
+      },
+      "lastPushTimeStamp": "2023-04-04T17:05:59.882Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::741373867248:role/walkaboutLambdaRole36abc8d1-staging",
+        "Region": "eu-west-3",
+        "Arn": "arn:aws:lambda:eu-west-3:741373867248:function:cliptext-staging",
+        "Name": "cliptext-staging",
+        "LambdaExecutionRole": "walkaboutLambdaRole36abc8d1-staging"
+      },
+      "lastPushDirHash": "+nITC/fP8x5njbs3rsE0UMksTVI="
+    }
+  },
+  "auth": {
+    "walkabout": {
+      "service": "Cognito",
+      "serviceType": "managed",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify0fd09b1eefa74-staging-145702-deployment/amplify-cfn-templates/auth/walkabout-cloudformation-template.json",
+        "logicalId": "authwalkabout"
+      },
+      "lastPushTimeStamp": "2023-04-04T17:05:59.260Z",
+      "output": {
+        "UserPoolId": "eu-west-3_0fsBhovMS",
+        "AppClientIDWeb": "7vgk79pba3ac7k64nfis0sb51",
+        "AppClientID": "65f2m30o7365qob0ae8lcs267s",
+        "IdentityPoolId": "eu-west-3:99cd4b30-0051-46bc-be72-74639ada93fc",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-west-3:741373867248:userpool/eu-west-3_0fsBhovMS",
+        "IdentityPoolName": "walkabout_identitypool_8f230450__staging",
+        "UserPoolName": "walkabout_userpool_8f230450"
+      },
+      "lastPushDirHash": "VOZy4u1B1mqPnFChM05IAjP15Jo="
+    }
+  },
+  "api": {
+    "clipuse": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "clipimage",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        },
+        {
+          "category": "function",
+          "resourceName": "cliptext",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify0fd09b1eefa74-staging-145702-deployment/amplify-cfn-templates/api/clipuse-cloudformation-template.json",
+        "logicalId": "apiclipuse"
+      },
+      "lastPushTimeStamp": "2023-04-04T17:05:59.272Z",
+      "output": {
+        "ApiName": "clipuse",
+        "RootUrl": "https://pyy9nzcev8.execute-api.eu-west-3.amazonaws.com/staging",
+        "ApiId": "pyy9nzcev8"
+      },
+      "lastPushDirHash": "EDQcSe8fe+DTgBfDaPrkIK3wfRQ="
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "permissions": {},
+  "lambdaLayers": [
+    {
+      "type": "ExternalLayer",
+      "arn": "arn:aws:lambda:eu-west-3:741373867248:layer:python_ecs:1"
+    }
+  ]
+}
