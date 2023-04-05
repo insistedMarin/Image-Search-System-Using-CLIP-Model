@@ -6,7 +6,7 @@ The CLIP model is an image and text matching model developed by openAI, which ca
 ### Back-end
 --Deploy the docker image 'public.ecr.aws/d2x9y6a2/wy-usage:1.0' on AWS ECS.
 
---Copy lambda function 'amplify/backend/fucntion/clipimage/src/index.py' and 'amplify/backend/fucntion/textimage/src/index.py' for creating your lambda functions of python3.9, replace the api_url with the ip address and interface of your own deployed container.
+--Copy lambda function 'amplify/backend/fucntion/clipimage/src/index.py' and 'amplify/backend/fucntion/textimage/src/index.py' for creating your lambda functions of python3.9, replace the api_url with the ip address and port of your own deployed container.
 
 --Add a layer containing package numpy and requests for lambda functions
 
